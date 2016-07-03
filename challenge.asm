@@ -1,5 +1,5 @@
 extern strcmp
-extern getchar
+
 global _start
 
 section .data:
@@ -46,7 +46,6 @@ while:
     mov rdi, buffer
     mov rsi, exitString
     call strcmp
-
     cmp rax, 0
     je exit
 ;compare with lastWord
